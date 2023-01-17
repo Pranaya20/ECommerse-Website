@@ -147,7 +147,7 @@ footer{
         right:0px !important;
       }
       #navbar{
-        background: rgb(196, 31, 31);
+        background: #f1f1f1;
         width:400px;
         height:100vh;
         visibility: visible;
