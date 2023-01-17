@@ -1,0 +1,182 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    -webkit-backdrop-filter: blur(26px);
+    backdrop-filter: blur(26px);
+    z-index: 999;
+    top: 0;
+    padding: 0px 82px;
+}
+.nav-container-main{
+    max-width: 1140px;
+}
+h1{
+    color:black;
+}
+ul{
+    color:black;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    list-style-type: none !important; 
+}
+li{
+    margin-left:10px;
+}
+input{
+    max-width:300px;
+    height:21px;
+    padding:6px;
+    outline:none;
+    border:none;
+    font-size: 15px;;
+}
+.conatiner-heading{
+    color:black;
+    text-align: center;
+    margin-top:120px;
+}
+.heading{
+    cursor: pointer;
+        position: absolute;
+        left: 65px;
+        font-size: 30px;
+}
+.card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.garments-img{
+    max-width:293px;
+    width:100%;
+    margin-left:10px;
+    height:500px;
+    cursor: pointer;
+
+}
+
+.nav-container{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.hamburger{
+    visibility: hidden;
+  }
+h2{
+    margin-bottom: 10px;
+}
+footer{
+    width:100%;
+    background:rgb(188, 156, 156);
+    padding:20px;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 73px;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .change{
+    background: gainsboro;
+    width:100%;
+    height:100%;
+  }
+  
+  /* Responsive columns */
+  @media (min-width : 1200px) and (max-width : 1400px){
+    .garments-img{
+        width:244px;
+    }
+  }
+  @media (min-width : 1024px) and (max-width : 1200px){
+   
+  }
+  @media (min-width : 991px) and (max-width : 1024px){
+ }
+ @media (min-width : 767px) and (max-width : 991px){
+}
+@media (min-width : 320px) and (max-width : 767px){
+    ul{
+        visibility: hidden;
+    }
+    .hamburger{
+        
+        visibility: visible;
+        float:right;
+        display: block;
+      position: absolute;
+      right: 74px;
+      width: 20px;
+      height: 20px;
+      }
+      .heading{
+        cursor: pointer;
+        position: absolute;
+        left: 25px;
+      }
+      .active{
+        background: rgb(196, 31, 31);
+        width:400px;
+        height:100vh;
+        visibility: visible;
+        justify-content: start;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0px;
+        right:0px;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding:40px 0px 0px 20px;
+        transition: 0.3s;
+      }
+      li{
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .active{
+        right:0px;
+      }
+      
+}
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
