@@ -107,6 +107,9 @@ footer{
     width:100%;
     height:100%;
   }
+ #close{
+    visibility: hidden;
+ } 
   
   /* Responsive columns */
   @media (min-width : 1200px) and (max-width : 1400px){
@@ -141,6 +144,9 @@ footer{
         left: 25px;
       }
       .active{
+        right:0px !important;
+      }
+      #navbar{
         background: rgb(196, 31, 31);
         width:400px;
         height:100vh;
@@ -150,7 +156,7 @@ footer{
         align-items: flex-start;
         position: fixed;
         top: 0px;
-        right:0px;
+        right:-397px;
         box-shadow: 0 40px 60px rgba(0,0,0,0.1);
         padding:40px 0px 0px 20px;
         transition: 0.3s;
@@ -163,6 +169,12 @@ footer{
       .active{
         right:0px;
       }
+      #close{
+        visibility: visible;
+        position: absolute;
+        right: 78px;
+        font-size: 24px;
+     } 
       
 }
   @media screen and (max-width: 600px) {
